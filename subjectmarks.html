@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Five Subject Marks</title>
+</head>
+<body>
+	Maths: <input type="number1" id="num1"><br>
+	Physics: <input type="number2" id="num2"><br>
+	Chemistry: <input type="number3" id="num3"><br>
+	Social: <input type="number4" id="num4"><br>
+	English: <input type="number5" id="num5"><br>
+
+	<div id="demo"></div>
+	<button onclick="Total()">Total Marks</button>
+	<button onclick="Average()">Average</button>
+	<button onclick="percentage()">Percentage</button>
+	
+	<script>
+		function Total(num1,num2,num3,num4,num5){
+		var num1=document.getElementById("num1").value;
+		var num2=document.getElementById("num2").value;
+		var num3=document.getElementById("num3").value;
+		var num4=document.getElementById("num4").value;
+		var num5=document.getElementById("num5").value;
+
+		var sum=parseInt(num1)+parseInt(num2)+parseInt(num3)+parseInt(num4)+parseInt(num5);
+		var result=document.getElementById("demo").innerHTML="Total Marks : "+sum;
+		return result;
+	}
+	function Average(num1,num2,num3,num4,num5){
+		var num1=document.getElementById("num1").value;
+		var num2=document.getElementById("num2").value;
+		var num3=document.getElementById("num3").value;
+		var num4=document.getElementById("num4").value;
+		var num5=document.getElementById("num5").value;
+
+		var sum=(parseInt(num1)+parseInt(num2)+parseInt(num3)+parseInt(num4)+parseInt(num5))/5;
+		var result=document.getElementById("demo").innerHTML="Average : "+sum;
+		return result;
+	}
+	function percentage(num1,num2,num3,num4,num5){
+		var num1=document.getElementById("num1").value;
+		var num2=document.getElementById("num2").value;
+		var num3=document.getElementById("num3").value;
+		var num4=document.getElementById("num4").value;
+		var num5=document.getElementById("num5").value;
+
+		var sum=((parseFloat(num1)+parseFloat(num2)+parseFloat(num3)+parseFloat(num4)+parseFloat(num5))/500)*100;
+		var result=document.getElementById("demo").innerHTML="Percentage: "+sum;
+		return result;
+	}
+	</script>
+</body>
+</html>

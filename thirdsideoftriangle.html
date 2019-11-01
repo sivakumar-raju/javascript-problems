@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Third Side Of a Triangle</title>
+</head>
+<body>
+	First Side: <input type="number1" id="num1">
+	Second Side: <input type="number2" id="num2">
+	<div id="demo"></div>
+
+	<button onclick="Thirdside()">power</button>
+	
+	<script>
+		function Thirdside(num1){
+		var num1=document.getElementById("num1").value;
+		var num2=document.getElementById("num2").value;
+		var sum=180-(parseInt(num1)+parseInt(num2))
+		var result=document.getElementById("demo").innerHTML="The Thirdside of a Triangle is: "+sum;
+		return result;
+	}
+	</script>
+</body>
+</html>

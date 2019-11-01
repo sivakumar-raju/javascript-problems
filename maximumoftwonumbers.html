@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maximum of Two Numbers</title>
+</head>
+<body>
+	Number1: <input type="number1" id="num1">
+	Number2: <input type="number2" id="num2">
+	<div id="demo"></div>
+	<button onclick="Maximum()">MaxofTwo</button>
+	
+	<script>
+		function Maximum(num1){
+		var num1=document.getElementById("num1").value;
+		var num2=document.getElementById("num2").value;
+		if(num1>num2){
+			var result=document.getElementById("demo").innerHTML="Num1 is Greater: "+num1;
+		  return result;
+		}else{
+			var result=document.getElementById("demo").innerHTML="Num2 is Greater: "+num2;
+		  return result;
+		}
+		
+	}
+	</script>
+</body>
+</html>

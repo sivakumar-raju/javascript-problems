@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Area of an Equilateral Triangle</title>
+</head>
+<body>
+	Area Of Equilateral Triangle: <input type="number1" id="num1">
+	<div id="demo"></div>
+	<button onclick="AreaofEqui()">Area of Equilateral Triangle</button>
+	
+	<script>
+		function AreaofEqui(num1){
+		var num1=document.getElementById("num1").value;
+		var sum=Math.sqrt(3)/4*(2*parseInt(num1));
+		var result=document.getElementById("demo").innerHTML="Area of an Equilateral Triangle: "+sum;
+		return result;
+	}
+	</script>
+</body>
+</html>

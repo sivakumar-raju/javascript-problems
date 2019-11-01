@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Total notes in thre given amount</title>
+</head>
+<body>
+     Total number of notes of given Amount: <input type="number1" id="num1">
+	<div id="demo"></div>
+	<button onclick="Maximumof()">TotalNotes</button>
+	
+	<script>
+
+		function Maximumof(num1){
+		var num1=parseInt(document.getElementById("num1").value);		
+
+	    var note2000=0;
+	    var note500=0;
+	    var note100=0;
+	    var note50=0;
+	    var note10=0;
+	    var note5=0;
+	    var note2=0;
+	    var note1=0;
+
+        if(num1>=2000){
+        	note2000=num1/2000;
+        	var a=parseInt(note2000);
+            num1 -=a*2000;
+            document.getElementById("demo").innerHTML+='2000note: '+a+"<br>";
+		     
+
+        }
+         if(num1>=500){
+        	note500=num1/500;
+            var a=parseInt(note500);
+            num1 -=a*500;
+            document.getElementById("demo").innerHTML+='500note: '+a+"<br>";
+		 
+        }
+         if(num1>=100){
+        	note100=num1/100;
+            var a=parseInt(note100);
+            num1 -=a*100;
+            document.getElementById("demo").innerHTML+='100note: '+a+"<br>";
+		 
+        }
+         if(num1>=50){
+        	note50=num1/50;
+            var a=parseInt(note50);
+            num1 -=a*50;
+            document.getElementById("demo").innerHTML+='50note: '+a+"<br>";
+		  
+        }
+        if(num1>=20){
+        	note20=num1/20;
+            var a=parseInt(note20);
+            num1 -=a*20;
+           document.getElementById("demo").innerHTML+='20note: '+a+"<br>";
+		     
+        }
+         if(num1>=10){
+        	note10=num1/10;
+            var a=parseInt(note10);
+            num1 -=a*10;
+            document.getElementById("demo").innerHTML+='10note: '+a+"<br>";
+		    
+        } if(num1>=5){
+        	note5=num1/5;
+            var a=parseInt(note5);
+            num1 -=a*5;
+            document.getElementById("demo").innerHTML+='5Rupee: '+a+"<br>";
+		    
+        }
+        if(num1>=2){
+        	note2=num1/2;
+            var a=parseInt(note2);
+            num1 -=a*2;
+            document.getElementById("demo").innerHTML+='2Rupee: '+a+"<br>";
+		    
+        }
+         if(num1>=1){
+        	note1=num1
+           document.getElementById("demo").innerHTML+='1Rupee: '+a+"<br>";
+		    
+        }
+
+        // var result=document.getElementById("demo").innerHTML=dict[num1];
+		// return result;
+
+    }
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Even or Odd</title>
+</head>
+<body>
+	Number: <input type="number1" id="num1">
+	<div id="demo"></div>
+	<button onclick="Maximumof()">Evenorodd</button>
+	
+	<script>
+		function Maximumof(num1){
+		var num1=parseInt(document.getElementById("num1").value);
+		
+
+		if(num1%2==0){
+			var result=document.getElementById("demo").innerHTML=num1+" is Even";
+		  return result;
+		}else{
+			var result=document.getElementById("demo").innerHTML=num1+" is Odd";
+		  return result;
+		}
+	}
+	</script>
+</body>
+</html>

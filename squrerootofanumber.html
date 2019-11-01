@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Squre root of a Number</title>
+</head>
+<body>
+	Squre Root Of: <input type="number1" id="num1">
+	<div id="demo"></div>
+	<button onclick="Square()">Squareroot</button>
+	
+	<script>
+		function Square(num1){
+		var num1=document.getElementById("num1").value;
+		var sum=Math.sqrt(parseInt(num1))
+		var result=document.getElementById("demo").innerHTML="Square root Of: "+sum;
+		return result;
+	}
+	</script>
+</body>
+</html>

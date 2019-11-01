@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Perimeter of a reactangle</title>
+</head>
+<body>
+	Length: <input type="number1" id="num1">
+	Breadth: <input type="number2" id="num2">
+	<div id="demo"></div>
+
+	<button onclick="ADD()">Perimeter</button>
+	<script>
+		function ADD(num1,num2){
+		var num1=document.getElementById("num1").value;
+		var num2=document.getElementById("num2").value;
+		var sum=2*(parseInt(num1)+parseInt(num2));
+		var result=document.getElementById("demo").innerHTML="Perimeter of a reactangle: "+sum;
+		return result;
+	}
+	</script>
+</body>
+</html>

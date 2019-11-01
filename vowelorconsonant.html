@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vowel or consonant</title>
+</head>
+<body>
+     charcter: <input type="number1" id="num1">
+	<div id="demo"></div>
+	<button onclick="Maximumof()">vowelorconsonant</button>
+	
+	<script>
+		function Maximumof(num1){
+
+		var num=document.getElementById("num1").value;
+		var num1=num.toLowerCase()
+		if(num1>='a' && num1<='z'){
+        if(num1 ==='a' || num1 ==='e'|| num1==='i' || num1 ==='o' || num1==='u' ){
+			var result=document.getElementById("demo").innerHTML=num1+" is Vowel ";
+		  return result;
+		}else{
+			var result=document.getElementById("demo").innerHTML=num1+" is Consonant";
+		  return result;
+		}
+	}else{
+		var result=document.getElementById("demo").innerHTML=num1+" not an Alphabet ";
+		  return result;
+	}
+	}
+	</script>
+</body>
+</html>

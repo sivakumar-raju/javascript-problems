@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alphabetornot</title>
+</head>
+<body>
+     charcter: <input type="number1" id="num1">
+	<div id="demo"></div>
+	<button onclick="Maximumof()">check char or not</button>
+	
+	<script>
+		function Maximumof(num1){
+		var num1=document.getElementById("num1").value;
+		
+        if(num1>='A' && num1<='Z'|| num1>='a' && num1<='z' ){
+			var result=document.getElementById("demo").innerHTML=num1+" is Alphabet ";
+		  return result;
+		}else{
+			var result=document.getElementById("demo").innerHTML=num1+" NOT an Alphabet";
+		  return result;
+		}
+	}
+	</script>
+</body>
+</html>

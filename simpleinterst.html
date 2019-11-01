@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Interst</title>
+</head>
+<body>
+	P: <input type="number1" id="num1">
+	T: <input type="number2" id="num2">
+	R: <input type="number3" id="num3">
+	<div id="demo"></div>
+
+	<button onclick="simpleinterst()">SimpleInterst</button>
+	
+	<script>
+		function simpleinterst(num1){
+		var num1=document.getElementById("num1").value;
+		var num2=document.getElementById("num2").value;
+		var num3=document.getElementById("num3").value;
+        var r=num2/100;
+        var p=parseInt(num1);
+        var t=parseInt(num3);
+
+		var sum=p*(1+(r*t));
+		var result=document.getElementById("demo").innerHTML="SimpleInterst is: "+sum;
+		return result;
+	}
+	</script>
+</body>
+</html>

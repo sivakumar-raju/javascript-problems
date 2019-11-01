@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upper/Lower Case</title>
+</head>
+<body>
+     charcter: <input type="number1" id="num1">
+	<div id="demo"></div>
+	<button onclick="Maximumof()">Lower/Upper Case</button>
+	
+	<script>
+		function Maximumof(num1){
+
+		var num1=document.getElementById("num1").value;
+        if(num1>='a' && num1<='z'){
+			var result=document.getElementById("demo").innerHTML=num1+" is a LowerCase ";
+		  return result;
+		}else if(num1>='A' && num1<='Z'){
+			var result=document.getElementById("demo").innerHTML=num1+" is UpperCase";
+		  return result;
+		}else if(num1>=0){
+			var result=document.getElementById("demo").innerHTML=num1+" is Not an Alphabet";
+		  return result;
+		}else{
+			var result=document.getElementById("demo").innerHTML=num1+" is Not an Alphabet";
+		  return result;
+		}
+	}
+
+	</script>
+</body>
+</html>

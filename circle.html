@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Perimeter of a reactangle</title>
+</head>
+<body>
+	Enter Radius of circle: <input type="number1" id="num1">
+<div id="demo"></div>
+
+	<button onclick="Radius()">Radius</button>
+	<button onclick="Area()">Area</button>
+	<button onclick="Diameter()">Diameter</button>
+	<script>
+		function Radius(num1){
+		var num1=document.getElementById("num1").value;
+		var sum=2*(22/7)*parseInt(num1)
+		var result=document.getElementById("demo").innerHTML=sum;
+		return result;
+	}
+	function Area(num1){
+		var num1=document.getElementById("num1").value;
+		var sum=(22/7)*parseInt(num1)*parseInt(num1)
+		var result=document.getElementById("demo").innerHTML=sum;
+		return result;
+	}	
+	function Diameter(num1){
+		var num1=document.getElementById("num1").value;
+		var sum=2*parseInt(num1);
+		var result=document.getElementById("demo").innerHTML=sum;
+		return result;
+	}
+
+</script>
+</body>
+</html>

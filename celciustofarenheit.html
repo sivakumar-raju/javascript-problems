@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Celcius to Farenheit</title>
+</head>
+<body>
+	Celcius: <input type="number1" id="num1">
+	<div id="demo"></div>
+
+	<button onclick="Celsius()">Farenheit</button>
+	<script>
+		function Celsius(num1){
+		var num1=document.getElementById("num1").value;
+		var sum=(parseInt(num1)*9/5)+32
+		var result=document.getElementById("demo").innerHTML="Farenheit: "+sum+"F";
+		return result;
+	}
+	</script>
+</body>
+</html>

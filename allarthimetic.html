@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All arthimetic operators</title>
+</head>
+<body>
+	Number1: <input type="number1" id="num1">
+	Number2: <input type="number2" id="num2">
+	<div id="demo"></div>
+
+	<button onclick="ADD()">ADD</button>
+	<button onclick="SUB()">SUB</button>
+	<button onclick="MUL()">MUL</button>
+	<button onclick="DIV()">DIV</button>
+	<script>
+		function ADD(num1,num2){
+		var num1=document.getElementById("num1").value;
+		var num2=document.getElementById("num2").value;
+		var sum=parseInt(num1)+parseInt(num2);
+		var result=document.getElementById("demo").innerHTML="Addition of Two Number: "+sum;
+		return result;
+	}
+
+		function SUB(num1,num2){
+		var num1=document.getElementById("num1").value;
+		var num2=document.getElementById("num2").value;
+		var sum=parseInt(num1)-parseInt(num2);
+		var result=document.getElementById("demo").innerHTML="Subtraction of Two Number: "+sum;
+		return result;
+	}
+
+		function MUL(num1,num2){
+		var num1=document.getElementById("num1").value;
+		var num2=document.getElementById("num2").value;
+		var sum=parseInt(num1)*parseInt(num2);
+		var result=document.getElementById("demo").innerHTML="Multiplication of Two Number: "+sum;
+		return result;
+	}
+
+		function DIV(num1,num2){
+		var num1=document.getElementById("num1").value;
+		var num2=document.getElementById("num2").value;
+		var sum=parseInt(num1)/parseInt(num2);
+		var result=document.getElementById("demo").innerHTML="Division of Two Number: "+sum;
+		return result;
+	}
+	</script>
+</body>
+</html>

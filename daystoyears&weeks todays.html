@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DaystoYears & Weeks to Days</title>
+</head>
+<body>
+	Days to Years: <input type="number1" id="num1">
+	Weeks to Days: <input type="number2" id="num2">
+	<div id="demo"></div>
+
+	<button onclick="Years()">Years</button>
+	<button onclick="Days()">Days</button>
+	<script>
+		function Years(num1){
+		var num1=document.getElementById("num1").value;
+		var sum=parseInt(num1)/365
+		var result=document.getElementById("demo").innerHTML=sum+"Years";
+		return result;
+	}
+		function Days(num1){
+		var num1=document.getElementById("num2").value;
+		var sum=parseInt(num1)*7
+		var result=document.getElementById("demo").innerHTML=sum+"Days";
+		return result;
+	}	
+	</script>
+</body>
+</html>

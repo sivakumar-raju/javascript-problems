@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Negative/positive/zero</title>
+</head>
+<body>
+	Number: <input type="number1" id="num1">
+	<div id="demo"></div>
+	<button onclick="Maximumof()">Negative/positive/zero </button>
+	
+	<script>
+		function Maximumof(num1){
+		var num1=parseInt(document.getElementById("num1").value);
+		
+
+		if(num1>0){
+			var result=document.getElementById("demo").innerHTML=num1+" is Positive";
+		  return result;
+		}else if(num1<0) {
+			var result=document.getElementById("demo").innerHTML=num1+" is Negative"
+		  return result;
+		}
+		else if(num1==0){
+			var result=document.getElementById("demo").innerHTML=" Zero";
+		  return result;
+		}
+	}
+	</script>
+</body>
+</html>

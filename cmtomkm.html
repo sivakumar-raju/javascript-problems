@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cm to meter and kilometer</title>
+</head>
+<body>
+	Centimeter: <input type="number1" id="num1">
+	<div id="demo"></div>
+
+	<button onclick="Cm()">Meter</button>
+	<button onclick="Km()">Kilometer</button>
+	<script>
+		function Cm(num1){
+		var num1=document.getElementById("num1").value;
+		var sum=parseInt(num1)/100
+		var result=document.getElementById("demo").innerHTML=sum+"meters";
+		return result;
+	}
+	function Km(num1){
+		var num1=document.getElementById("num1").value;
+		var sum=parseInt(num1)/1000
+		var result=document.getElementById("demo").innerHTML=sum+"kilometer";
+		return result;
+	}
+	</script>
+</body>
+</html>

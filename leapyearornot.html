@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leap Year or Not</title>
+</head>
+<body>
+	Number: <input type="number1" id="num1">
+	<div id="demo"></div>
+	<button onclick="Maximumof()">Leapyearornot</button>
+	
+	<script>
+		function Maximumof(num1){
+		var num1=parseInt(document.getElementById("num1").value);
+		
+
+		if( (num1%4===0 && num1%100>0)|| num1%400===0){
+			var result=document.getElementById("demo").innerHTML=num1+" is Leap year ";
+		  return result;
+		}else{
+			var result=document.getElementById("demo").innerHTML=num1+" it is NOT a Leapyear";
+		  return result;
+		}
+	}
+	</script>
+</body>
+</html>

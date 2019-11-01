@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weeknumber to weekday</title>
+</head>
+<body>
+     Enter Weekdays from 1-7: <input type="number1" id="num1">
+	<div id="demo"></div>
+	<button onclick="Maximumof()">weekday</button>
+	
+	<script>
+
+		function Maximumof(num1){
+		var num1=document.getElementById("num1").value;
+        if(parseInt(num1)>0 && parseInt(num1)<=7){
+	    var dict={
+	    	'1':'Monday',
+	    	'2':'Tuesday',
+	    	'3':'Wednesday',
+	    	'4':'Thursday',
+	    	'5':'Friday',
+	    	'6':'Saturday',
+	    	'7':'Sunday'
+	    }
+        var result=document.getElementById("demo").innerHTML=dict[num1];
+		return result;
+
+    }else{
+        var result=document.getElementById("demo").innerHTML="Enter a week Number";
+		return result;
+    }
+	}
+	</script>
+</body>
+</html>
